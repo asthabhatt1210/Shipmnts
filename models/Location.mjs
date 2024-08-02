@@ -7,3 +7,9 @@ const locationSchema = new mongoose.Schema({
 });
 
 export default mongoose.model('Location', locationSchema);
+
+
+
+
+
+
