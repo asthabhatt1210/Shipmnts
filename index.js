@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 const locationRoutes = require('./routes/location');
 const roadRoutes = require('./routes/road');
 const trafficUpdateRoutes = require('./routes/trafficUpdate');
+const shortestPathRoutes = require('./routes/shortestPath');
 
 dotenv.config();
 
@@ -28,8 +29,4 @@ mongoose.connect(MONGO_URL, {
 app.use(locationRoutes);
 app.use(roadRoutes);
 app.use(trafficUpdateRoutes);
-
-
-
-
-
+app.use(shortestPathRoutes);
